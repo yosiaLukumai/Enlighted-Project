@@ -1,0 +1,12 @@
+<% if(typeof  arrayErrors != 'undefined') { %>
+    <% arrayErrors.forEach(errs => { %>
+            <div class="alert alert-warning alert-dismissable fade show" role="alert" >
+                <%= errs.err %>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+    <% }) %>
+
+<%} %>
